@@ -1,0 +1,60 @@
+body {
+    background-color:#ffd100;
+  }
+  /*  #ffd100   #fcfcfc */
+  .container-img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .container-img .logo-zc {
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    top: 50%;
+    margin-top: -100px;
+  }
+  
+  .container-img .logo-zc {
+    animation: float 2s ease-out infinite;
+  }
+  
+  .shadowFrame {
+    width: 230px;
+    position: absolute;
+    left: 50%;
+    margin-left: -115px;
+    top: 50%;
+    margin-top: 130px;
+    opacity: 0.4;
+  }
+  
+  
+  @keyframes float {
+    50% {
+      transform: translate(0, 50px);
+    }
+  }
+  .shadow {
+    animation: shrink 2s ease-out infinite;
+    transform-origin: center center;
+  }
+  .shadow ellipse {
+    transform-origin: center center;
+  }
+  @keyframes shrink {
+    0% {
+      width: 90%;
+      margin: 0 5%;
+    }
+    50% {
+      width: 60%;
+      margin: 0 20%;
+    }
+    100% {
+      width: 90%;
+      margin: 0 5%;
+    }
+  }
+  
